@@ -3,8 +3,10 @@ class ApiResponse {
         this.statusCode = statusCode;
         this.data = data;
         this.message = message;
-        this.errors = errors;
-        this.success = statusCode  < 400;
+        this.success = statusCode < 400;
+        // ✅ Removed this.errors — ApiResponse doesn't need errors
+        //    errors belong in ApiError class
     }
 }
+
 export { ApiResponse };
