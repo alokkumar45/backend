@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "type": "module",
-  "scripts": {
-    "dev": "dotenvx run -- nodemon src/index.js"
+
+"scripts": {
+    "dev": "nodemon -r dotenv/config --experimental-vm-modules src/index.js"
 },
   "author": "Alok kumar",
   "license": "ISC",
